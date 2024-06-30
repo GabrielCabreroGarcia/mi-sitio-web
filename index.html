@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gabriel Cabrero García - Mechatronics Engineer</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <script src="script.js" defer></script>
+    </head>
+    
+<body>
+    <header>
+        <div class="banner">
+            <div class="banner-content">
+                <div class="center-name">
+                    <h1>Gabriel Cabrero García</h1>
+                </div>
+                <div class="subtitles">
+                    <ul>
+                        <li><span class="subtitle">Mechatronics Engineer</span></li>
+                        <li><span class="subtitle">Agile Project Manager</span></li>
+                        <li><span class="subtitle">Entrepreneur</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about" onclick="showSection('about')">About Me</a></li>
+            <li><a href="#education" onclick="showSection('education')">Education</a></li>
+            <li class="dropdown">
+                <a href="#projects" onclick="showSection('projects')">Projects</a>
+                <ul class="dropdown-content">
+                    <li><a href="#project1" onclick="showProject('project1')">Remote Robot Manipulation Anthropomorphic</a></li>
+                    <li><a href="#project2" onclick="showProject('project2')">3D Printer</a></li>
+                    <li><a href="#project3" onclick="showProject('project3')">Automated room lighting with Alexa</a></li>
+                </ul>
+            </li>
+            <li><a href="#languages" onclick="showSection('languages')">Languages</a></li>
+            <li><a href="#download-cv">Download CV</a></li>
+            <li><a href="#contact" onclick="showSection('contact')">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about" class="section-content">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>I am 25 years old, born in Mendoza, Argentina, but I hold dual citizenship as an 
+                Argentine-Spanish citizen. I pursued a degree in Mechatronics Engineering at the 
+                National University of Cuyo for six years and graduated in May 2024. Currently, I 
+                am enrolled in a diploma program in Project Management further to enhance my skills
+                and knowledge in this field.</p>
+                <p>I have a passion for sports and have played rugby since I was 13 at Los Tordos 
+                Rugby Club. Rugby has been a significant part of my life, helping to shape my 
+                leadership abilities and teaching me the value of teamwork and collaboration. 
+                My experiences in the field have been instrumental in developing my character and 
+                approach to both professional and personal challenges.</p>
+                <p>As an entrepreneur, I am always exploring new business opportunities. I am one 
+                of the founders of MetaFila, an innovative app designed to manage the wait times 
+                of commercial and non-commercial establishments in the metaverse. With MetaFila, 
+                our goal is to streamline queue management, benefiting both users and establishments 
+                by improving efficiency and customer satisfaction. In addition, I am part of the 
+                founding team of Happy Home, a company focused on providing installation and 
+                maintenance services for residential electrical systems and home automation. Our 
+                mission at Happy Home is to create intelligent, secure, and efficient living spaces 
+                for our clients.</p>
+                <p>I consider myself a very active person with a strong desire to learn and grow. 
+                I am a technology enthusiast, always looking for ways to leverage new advancements
+                to improve comfort and well-being for people. My drive to innovate and my commitment 
+                to excellence are the foundations of my professional journey, and I am dedicated to 
+                making a positive impact through my work and ventures.</p>
+            </div>
+            <div class="about-images">
+                <img src="path_to_image1.png" alt="Image 1 Description">
+                <img src="path_to_image2.jpg" alt="Image 2 Description">
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="section-content" style="display: none;">
+        <h2>Education</h2>
+        <ul>
+            <li><strong>National University of Cuyo</strong> - M.Sc. in Mechatronics Engineering</li>
+            <li><strong>MundosE - National University of Córdoba</strong> - Agile Project Manager</li>
+        </ul>
+    </section>
+
+    <section id="projects" class="section-content" style="display: none;">
+        <h2>Projects</h2>
+        <div class="project-container" id="project1" style="display: none;">
+            <div class="project-card">
+                <h3>Remote Robot Manipulation Anthropomorphic</h3>
+                <div class="carousel">
+                    <div class="carousel-track">
+                        <video src="path_to_video10.mp4" controls></video>
+                        <video src="path_to_video11.mp4" controls></video>
+                        <video src="path_to_video12.mp4" controls></video>
+                        <video src="path_to_video13.mp4" controls></video>
+                    </div>
+                </div>
+                <p>We developed an advanced remote control system for an anthropomorphic arm to improve 
+                    human-robot interaction in industrial environments. This project carried out in collaboration with my 
+                    colleague Agustín Sardi Bottino, addressed the need to provide more intuitive and natural control of robotic 
+                    manipulators.</p>
+
+                <p>The product combines computer vision and remote control technologies to allow operators to manipulate the 
+                    robotic arm precisely and safely. We implemented a gesture capture system based on computer vision that 
+                    translates the operator's movements into commands for the robotic arm. This innovative approach enhances 
+                    the precision and ease of use of robotic control.</p>
+                    
+                <p>We developed robust control algorithms using Python and C++ programming to program the Blue Pill board, 
+                    ensuring efficient and reliable operation of the robotic arm. Additionally, we created interactive training 
+                    software using Unity, which simulates the work environment and facilitates the learning and practice of 
+                    operators, allowing them to familiarize themselves with the system before using it in a real setting.</p>
+                    
+                <p>The anthropomorphic arm we assembled features high-quality mechanical and electronic components designed to 
+                    withstand the demands of industrial operations. The final prototype integrated all the necessary hardware with 
+                    the control software, achieving a cohesive and functional solution.</p>
+                    
+                <p>This remote control system represents a significant advancement in human-robot interaction, offering a powerful 
+                    tool to improve efficiency and safety in various industrial applications. The combination of computer vision, 
+                    advanced programming, and Unity simulation provides intuitive and precise handling, facilitating the work of 
+                    operators and enhancing productivity in the industrial environment.</p>
+            </div>
+        </div>
+        <div class="project-container" id="project2" style="display: none;">
+            <div class="project-card">
+                <h3>3D Printer</h3>
+                <div class="carousel">
+                    <div class="carousel-track">
+                        <img src="path_to_image21.jpeg" alt="3D Printer Image 1">
+                        <video src="path_to_video21.mp4" controls></video>
+                        <video src="path_to_video22.mp4" controls></video>
+                    </div>
+                </div>
+                <p>My 3D printer project is based on the renowned Prusa 3D model and operates using the 
+                open-source Marlin firmware. This project incorporates several key technical specifications 
+                and components for optimal performance. The printer's frame is constructed from MDF (medium-
+                density fiberboard)</p>
+
+                <p>At the core of the control system is an Arduino Mega, paired with a RAMPS 1.6 kit. The 
+                Arduino Mega, known for its capacity and flexibility, runs the Marlin firmware, which is 
+                highly popular in the 3D printing community for its reliability and customization options. 
+                The RAMPS 1.6 kit facilitates the connection and control of stepper motors, heaters, and 
+                temperature sensors, enabling efficient and precise management of all the printer's 
+                components. This configuration ensures the printer can handle complex tasks and produce high
+                -quality prints.</p>
+
+                <p>The printer is designed to offer a 20 cm by 20 cm print area, which is suitable for a 
+                wide range of projects, from small prototypes to larger, more detailed pieces. This generous
+                print space, combined with the sturdy MDF frame and advanced control system based on the 
+                Arduino Mega and RAMPS 1.6, makes this printer a powerful and versatile tool for any 3D 
+                printing enthusiast. With these features, the printer is not only capable of producing 
+                precise and detailed prints but also serves as an excellent platform for experimentation and
+                learning in the field of 3D printing.</p>
+            </div>
+        </div>
+        <div class="project-container" id="project3" style="display: none;">
+            <div class="project-card">
+                <h3>Automated room lighting with Alexa</h3>
+                <div class="carousel">
+                    <div class="carousel-track">
+                        <img src="path_to_image31.jpg" alt="Automated Lighting Image 1">
+                        <img src="path_to_image32.jpg" alt="Automated Lighting Image 2">
+                        <video src="path_to_video31.mp4" controls></video>
+                        <video src="path_to_video32.mp4" controls></video>
+                    </div>
+                </div>
+                <p>Description for project 3. Sed ac lorem auctor, vehicula purus at, tincidunt est. In vitae risus vitae quam placerat interdum at nec ligula.</p>
+            </div>
+        </div>
+    </section>
+    <section id="languages" class="section-content" style="display: none;">
+        <h2>Languages</h2>
+        <ul class="languages-list">
+            <li><img src="path_to_spanish_flag.png" alt="Spanish Flag" title="Español"></li>
+            <li><img src="path_to_english_flag.png" alt="English Flag" title="English"></li>
+            <li><img src="path_to_french_flag.png" alt="French Flag" title="Français"></li>
+        </ul>
+    </section>
+
+    <section id="download-cv" class="section-content" style="display: none;">
+        <h2>Download CV</h2>
+        <div class="cv-container" >
+            <a href="CGC_CV__H.pdf" download="CV_CabreroGarcia_Español.pdf" class="cv-link">
+                <button>Download CV in Spanish</button>
+            </a>
+            <a href="CGC_CVE__H.pdf" download="CV_CabreroGarcia_English.pdf" class="cv-link">
+                <button>Download CV in English</button>
+            </a>
+        </div>
+    </section>
+
+    <footer id="contact" class="section-content" style="display: none;">
+        <h2>Contact</h2>
+        <p class="intro-text">Feel free to reach out to me if you'd like to.</p>
+        <p>Email: <a href="mailto:gabrielcabrero28@gmail.com">gabrielcabrero28@gmail.com</a></p>
+        <p>Phone: <a href="tel:+542616153774">+54 261 615 3774</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/gabriel-cabrero-garc%C3%ADa-b89158225/" target="_blank">Perfil de LinkedIn</a></p>
+        <br><p>&copy; 2024 Gabriel Cabrero García</p>
+    </footer>
+</body>
+</html>
